@@ -60,6 +60,7 @@ class D3plotFiletype(enum.Enum):
     D3PLOT = 1
     D3PART = 5
     D3EIGV = 11
+    D3SSD = 21
     INTFOR = 4
 
 
@@ -1136,6 +1137,7 @@ class D3plotHeader:
                 D3plotFiletype.D3PLOT.value,
                 D3plotFiletype.D3PART.value,
                 D3plotFiletype.D3EIGV.value,
+                D3plotFiletype.D3SSD.value,
             ):
                 word_size = 4
                 itype = np.int32
@@ -1154,6 +1156,7 @@ class D3plotHeader:
                 D3plotFiletype.D3PLOT.value,
                 D3plotFiletype.D3PART.value,
                 D3plotFiletype.D3EIGV.value,
+                D3plotFiletype.D3SSD.value,
             ):
                 word_size = 8
                 itype = np.int64
